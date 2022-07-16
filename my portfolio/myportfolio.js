@@ -14,3 +14,15 @@ function openPage(pageName,elmnt,color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+// welcome greaetin
+ const time = new Date().getHours();
+    let greeting;
+    if (time < 10) {
+      greeting = "Good afternoon! welcome to ";
+    } else if (time < 20) {
+      greeting = "Good day ! welcome to ";
+    } else {
+      greeting = "Good evening ! welcome to ";
+    }
+    document.getElementById("demo").innerHTML = greeting;
