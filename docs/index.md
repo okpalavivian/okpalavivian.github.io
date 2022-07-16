@@ -1,37 +1,165 @@
-## Welcome to GitHub Pages
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>My Portfolio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="myportfolio.css">
+      <link rel="stylesheet" href="index.css">
+       
+      <script src="myportfolio.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <body>
 
-You can use the [editor on GitHub](https://github.com/okpalavivian/okpalavivian.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+        <div class="icon-bar">
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i> Facebook</a> 
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i>Twitter</a> 
+          <a href="#" class="google"><i class="fa fa-google"></i>google</a> 
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i>LinkedIn</a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i>Youtube</a> 
+        </div>
+        
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+      <div class="jumbotron text-center" style="height: 100px;">
+        <img class="img-fluid rounded-pill" src="my logo.jpg" style="width: 50px; float: left;">
+              
+        <h1><blockquote><b><strong>MY PORTFOLIO</strong></b></blockquote></h1>
+        <p id="today"></p>
+        <script>
+        const d = new Date();
+        document.getElementById("today").innerHTML = d;
+        </script> 
+        </div>
+      </div>
+     
+    
 
-### Markdown
+      <button class="open-button" onclick="openForm()">Login</button>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      
+      <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script>
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+   <div class="navbar-nav text-center">
+      
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#"  style="margin-left: 300px;">Home</a>
+        
 
-- Bulleted
-- List
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="About me.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html">Education</a>
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="work experience.html">Work Experiences</a>
+            </li> 
+            
+            
+        <button class=" bg-white" type="submit"><a class="" href="OKPALA_VIVIANS_CV.docx"</a> Download CV</button></a>
+          </ul>
+        </div>  
+      </nav>
+  
+     <div class="row">
 
-1. Numbered
-2. List
+  
+<div class="col-6">
+  <div class="jumbotron">
+  <p> Hi! I'am Vivian Okpala</p>
+  <br> Am a Web Developer,
+  I Specialize in the Design and Development <br>
+  of Responsive and interactive Websites.
+       <h4>Hire me</h4> 
+         
+   
+    <div class="container">
+      <h5>My Programing skills</h5>
+      <p>HTML</p>
+      <div class="progress">
+        
+        <div class="progress-bar" style="width:95%">95%</div>
+      </div>
+      <p>CSS</p>
+      <div class="progress">
+        
+        <div class="progress-bar" style="width:80%">80%</div>
+      </div>
+      <p>JAVASCRIPT</p>
+      <div class="progress">
+        
+        <div class="progress-bar" style="width:30%">8%</div>
+      </div>
+      <p>PHP</p>
+      <div class="progress">
+        
+        <div class="progress-bar" style="width:70%">70%</div>
+      </div>
+      <p>BOOTSTRAP</p>
+      <div class="progress">
+        
+        <div class="progress-bar" style="width:70%">70%</div>
+      </div>
+    </div>
+    
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+</div>
+</div>
+<div class="col-6">
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+  <img class="img-fluid" src="images\DSC_4000.JPG" style="width:100%;">
+    
+  </div>
+</div>
+</div>
+     </div>
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/okpalavivian/okpalavivian.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+  <div class="footer fixed bottom" >
+    <p class="" style="color: white; margin-left: 300px;" padding: 20px;"> For more infomation about me cantact me on</p>
+    <a href="#Facebook" class="active" style="margin-left: 300px;">Facebook</a>
+    <a href="#email">Email</a>
+    <a href="#linkedin">LinkedIn</a>
+    <a href="resume">Resume</a>
+    <a href="essentials">Terms</a>
+    <a href="contact">Contact</a>
+    </div>
+</body>
+</html>
